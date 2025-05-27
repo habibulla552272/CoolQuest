@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Port+Lligat+Slab&family=Sora:wght@100..800&display=swap');
+
+@theme{
+    --font-logo:"Port Lligat Slab", "serif";
+}
+
+@layer base {
+  :root {
+    font-family: "Sora", sans-serif;
+   
+  }
+}

@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!-- tailwind css  -->
+             <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
@@ -19,7 +24,7 @@
             <header class="py-5 w-[90%] mx-auto md:w-[100%]">
                 <nav class="flex justify-between items-center bg-white rounded-3xl px-2">
                     <div>
-                        <h2 class="text-[32px] text-[#0B5D1E] ">CoolQuest</h2>
+                        <h2 class="font-logo font-bold text-[32px] text-[#0B5D1E] ">CoolQuest</h2>
                     </div>
                     <div>
                         <ul class="md:flex gap-5 text-[18px] ">
@@ -93,15 +98,15 @@
 
                     </div>
                 </div>
-                <div class="hero-right w-[90%] mx-auto md:w[100%]">
-                    <div class="hero-right-top relative pb-3">
+                <div class="hero-right w-[90%] mx-auto md:w[100%] ">
+                    <div class="hero-right-top relative pb-3 before:absolute before:bg-white before:w-full before:h-full before:top-0 before:left-0 before:[clip-path:polygon(0_30%,100%_0,100%_100%,0%_100%)] before:-z-10 z-[9999]">
                         <div class="">
                             <div class="absolute right-10 top-24">
 
                                 <img class="w-[100px]" src="img/License no.png" alt="">
                             </div>
                             <div class="absolute left-5 top-10">
-                                <img class="w-[150px]" src="img/warranty.png" alt="">
+                                <img class="w-[150px]" src="img/warranty.png" alt=""> 
                             </div>
                         </div>
                         <div>
@@ -311,7 +316,7 @@
                 <p class="text-[14px] text-[#FFFFFF] font-normal py-2">Installed a high-efficiency furnace system, reducing energy costs and improving comfort for the homeowners.</p>
                 <img class="w-[100%]" src="img/Frame 65.png" alt="">
             </div>
-             <div class="bg-green-800 w-[90%] md:w-[48%] mx-auto md:mx-0 p-4 rounded-2xl" >
+             <div class="bg-green-800 w-[90%] md:w-[48%] mx-auto md:mx-0 my-5 md:my-0 p-4 rounded-2xl" >
                 <h2 class="text-[24px] text-[#FFFFFF] font-medium ">Efficient Home Heating Upgrade</h2>
                 <p class="text-[14px] text-[#FFFFFF] font-normal py-2">Installed a high-efficiency furnace system, reducing energy costs and improving comfort for the homeowners.</p>
                 <img class="w-[100%]" src="img/Frame 65 (1).png" alt="">
@@ -340,8 +345,8 @@
                     </div>
                 </div>
 
-                <div class="w-[90%] mx-auto md:w-[30%] ">
-                    <img src="img/Frame 75.png" alt="">
+                <div class=" w-[90%] mx-auto my-3 md:my-0 md:w-[30%] ">
+                    <img class="w-full" src="img/Frame 75.png" alt="">
                 </div>
 
 
@@ -461,6 +466,34 @@
 
      </section>
 
+     <!-- Meet the People Behind the Work section start -->
+      <section>
+        <div class="container mx-auto">
+            <h2 class="text-[32px] text-center font-bold text-[#1A1A1A] py-3 ">Meet the People Behind the Work</h2>
+            <div class="md:flex md:justify-between md:items-center">
+
+                <div class="w-[90%] mx-auto md:w-[56%]">
+                    <img src="img/Frame 102.png" alt="">
+
+                </div>
+                <div class="flex gap-5 my-5 md:my-0 w-[96%] mx-auto md:w-[40%] md:mx-0">
+                    <div class="px-5 py-10 border-2 border-[#0B5D1E] rounded-xl">
+                        <p class="text-[14px] text-[#666666] font-normal">“My mission is simple — to give every homeowner reliable, efficient comfort they can count on, every day.”</p>
+                        <h2 class="text-[24px] font-medium text-[#0B5D1E] pt-10">James Carter</h2>
+                        <h4 class="text-[14px] text-[#666666] font-normal">Founder & Senior HVAC Specialist</h4>
+                    </div>
+                     <div class="px-5 py-10 border-2 border-[#0B5D1E] rounded-xl">
+                        <p class="text-[14px] text-[#666666] font-normal">“My mission is simple — to give every homeowner reliable, efficient comfort they can count on, every day.”</p>
+                        <h2 class="text-[24px] font-medium text-[#0B5D1E] pt-10">James Carter</h2>
+                        <h4 class="text-[14px] text-[#666666] font-normal">Founder & Senior HVAC Specialist</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+
 
     <!-- HVAC Insights section start  -->
      <section class="HVAC">
@@ -513,7 +546,38 @@
         </div>
         </section>
 
+    <!-- Areas We Serve section start  -->
+     <section>
+        <div class="container mx-auto my-10">
+             <h2 class='text-[32px] text-center font-bold text-[#1A1A1A] py-3 '>Areas We Serve</h2>
+
+            <div class="flex  flex-wrap justify-center gap-4 gap-y-4">
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Los Angeles</button>
+                <button class="px-6 py-2  text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Orlando</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Atlanta</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Phoenix</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Indianapolis</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Kansas City</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Chicagos</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Phoenix</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> San Francisco</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Chicago</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> San Antonio</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Charlotte</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> San Diego</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i>Kansas City</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Raleigh</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> San Diego</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Indianapolis</button>
+                <button class="px-6 py-2 text-[#0B5D1E] border-2 border-[#0B5D1E] rounded-3xl"><i class="fa-solid fa-location-dot"></i> Kansas City</button>
+
+
+
+            </div>
+
+        </div>
      </section>
+
     <!-- footer section  -->
     <footer class="bg-green-800 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 md:px-8">
